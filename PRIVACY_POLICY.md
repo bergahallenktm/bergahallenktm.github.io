@@ -1,15 +1,29 @@
-# Account & Data Deletion Information
+# Privacy Policy for BergaHallen KTM
 
-**BergaHallen KTM** operates on a fully decentralized and self-hosted architecture.
+**Effective Date:** September 24, 2026
 
-### How Your Data is Handled
-* **Local Data:** All app settings, local match logs, and scanned card data are stored locally on your device.
-* **Server Data:** If you connect the app to a self-hosted server, your data is stored exclusively on that specific server instance managed by your server administrator.
+This Privacy Policy describes how **BergaHallen KTM** ("the App") handles your information. 
 
-### How to Delete Your Account and Data
-Because there is no central master server or cloud database managed by the app developer, we do not collect, store, or have access to your personal data or match history.
+## 1. Decentralized Architecture
+The App is built on a decentralized model. The app developer does not operate a central server, collect, or store any of your personal data, match histories, or decklists.
 
-* **To delete local data:** Simply clear the app's cache/data via your Android device settings, or uninstall the app.
-* **To delete data on a connected server:** Log in to your connected server instance and remove your profile, or contact the system administrator of that specific server to request account removal.
+## 2. Data Storage & Usage
+* **Local Data:** All app configurations, match records, and game statistics are stored locally on your device.
+* **Self-Hosted Server Connections:** If you choose to connect the App to a self-hosted server instance, your data is transmitted directly to that specific server. The developer has no access to or control over data stored on independent servers.
 
-If you have questions regarding the app's data handling, feel free to contact us at: **bergahallenktm@gmail.com**
+## 3. Device Permissions
+To provide its features, the App requires the following permission:
+* **Camera Access:** Used solely for QR-code scan and to scan Magic: The Gathering cards locally on your device using Machine Learning (ML Kit). Image data is processed in real-time on your phone and is **never** recorded, stored, or transmitted to external servers.
+
+## 4. Third-Party Services & Tracking
+The App does not use third-party analytics, tracking services, advertising networks, or data brokers.
+
+## 5. Children's Privacy
+The App does not knowingly collect any personal identifiable information from anyone, including children.
+
+## 6. Changes to This Policy
+We may update our Privacy Policy from time to time. Any changes will be posted on this page.
+
+## 7. Contact Us
+If you have any questions or suggestions about this Privacy Policy, please contact us at:  
+**bergahallenktm@gmail.com**
