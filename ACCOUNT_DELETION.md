@@ -1,15 +1,46 @@
 # Account & Data Deletion Information
 
-**BergaHallen KTM** operates on a fully decentralized and self-hosted architecture.
+**BergaHallen KTM** uses a decentralized and self-hosted architecture. BergaHallenKTM does not operate a central account service or central user database.
 
-### How Your Data is Handled
-* **Local Data:** All app settings, local match logs, and scanned card data are stored locally on your device.
-* **Server Data:** If you connect the app to a self-hosted server, your data is stored exclusively on that specific server instance managed by your server administrator.
+## How Your Data Is Handled
 
-### How to Delete Your Account and Data
-Because there is no central master server or cloud database managed by the app developer, we do not collect, store, or have access to your personal data or match history.
+### Local App Data
 
-* **To delete local data:** Simply clear the app's cache/data via your Android device settings, or uninstall the app.
-* **To delete data on a connected server:** Log in to your connected server instance and remove your profile, or contact the system administrator of that specific server to request account removal.
+The Android app may store data locally on your device, including app settings, Local Mode match data, cached server data for offline functionality, and QuickScan-related settings or results.
 
-If you have questions regarding the app's data handling, feel free to contact us at: **bergahallenktm@gmail.com**
+### Self-Hosted Server Data
+
+If you connect the app to a BergaHallen KTM server, account information and server-side data are stored on that specific privately operated server.
+
+The BergaHallenKTM developer does not operate these servers and does not have access to accounts, match history, deck data, or other information stored on independently operated server instances.
+
+## How to Delete Local App Data
+
+To remove data stored locally by the Android app, you can:
+
+1. Open Android **Settings > Apps > BergaHallen KTM > Storage** and choose **Clear storage / Clear data**, or
+2. Uninstall the BergaHallen KTM app.
+
+Removing local app data does not automatically delete an account or data stored on a self-hosted server.
+
+## How to Delete an Account or Server Data
+
+Accounts belong to the specific self-hosted server on which they were created.
+
+To request or perform deletion:
+
+1. Use the account deletion function provided by the BergaHallen KTM app while connected to that server, where available.
+2. If you no longer have the Android app, access the web interface of the same private server and use its account/profile deletion function where available.
+3. If the server does not provide self-service deletion through its web interface, contact the administrator of that specific server and request deletion of your account and associated data.
+
+Because BergaHallenKTM does not operate a central account service, the app developer cannot directly access or delete accounts stored on independently operated servers.
+
+Deletion of server-side data is performed by the relevant self-hosted server instance.
+
+## Questions
+
+For questions about the BergaHallen KTM application's privacy and data-handling design, contact:
+
+**[bergahallenktm@gmail.com](mailto:bergahallenktm@gmail.com)**
+
+For deletion of an account hosted on a private server, contact the administrator of that server.
