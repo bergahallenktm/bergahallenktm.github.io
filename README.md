@@ -1,4 +1,7 @@
 # bergahallenktm.github.io
+[Android App](https://play.google.com) | [BergaHallenKTM Server](https://github.com/bergahallenktm/bergahallenktm-server) | [BergaHallenKTM Server Manager](https://github.com/bergahallenktm/bergahallenktm-server-installer) | [BergaHallenKTM](https://github.com/bergahallenktm/bergahallenktm)
+
+---
 # What is BergaHallen KTM?
 
 BergaHallen KTM is a self-hosted/local-first companion system for playing and managing **Magic: The Gathering** games.
