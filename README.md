@@ -84,3 +84,6 @@ Current Server logic includes:
 - Planechase as a modifier/foundation.
 
 Do not hard-code match behavior in a client without checking the Server match/rules contracts. The Server remains the shared source of truth for Server Mode rules/state.
+
+
+[Privacy Policy](https://bergahallenktm.github.io/PRIVACY_POLICY.html) | [License](https://bergahallenktm.github.io/license.html) | [Account Deletion](https://bergahallenktm.github.io/ACCOUNT_DELETION.html) | [BergaHallenKTM](https://github.com/bergahallenktm/bergahallenktm)
