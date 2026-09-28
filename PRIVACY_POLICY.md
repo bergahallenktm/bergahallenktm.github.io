@@ -77,7 +77,9 @@ Specifically, the application makes direct outbound requests to Scryfall to:
 * 
 
 **Data Privacy regarding Scryfall:**
-When the application connects to Scryfall, normal Internet metadata (such as your IP address and standard HTTP headers) is naturally visible to Scryfall and its hosting infrastructure. However, the application protects your privacy by ensuring that:
+When the application connects to Scryfall, normal Internet metadata, such as IP address, request time, HTTP/TLS metadata, User-Agent information, and information normally visible to Scryfall's hosting or CDN infrastructure.
+
+However, the application protects your privacy by ensuring that:
 * Camera image frames and OCR processing remain strictly on-device.
 * Your card scan history, saved decks, and collection data are **not** sent to Scryfall.
 * Your BergaHallen KTM account details, server identity, and authentication data are **not** sent to Scryfall.
