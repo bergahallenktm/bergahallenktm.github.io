@@ -66,9 +66,15 @@ BergaHallen KTM does not use these capabilities to collect device location for a
 
 To ensure accurate card recognition, QuickScan requires a local card reference database. The application connects directly to **Scryfall** (a third-party public card data provider) over the Internet to keep this database up to date.
 
+* QuickScan starts using its bundled or locally stored card database without waiting for the Scryfall metadata request. The bulk Oracle Cards database is not downloaded automatically; downloading an update requires explicit user approval.
+
+* Downloaded card data is validated before being activated locally. If an update cannot be validated, the existing bundled or local database remains available, and QuickScan continues to support offline scanning.
+
 Specifically, the application makes direct outbound requests to Scryfall to:
-* perform an automatic, lightweight metadata check upon QuickScan startup (only when a validated Internet connection exists) to determine if newer public card reference data is available;
-* download public card reference bulk data when the user explicitly requests or approves an update.
+* perform an automatic, lightweight metadata check upon QuickScan startup (only when a validated Internet connection exists) to determine if newer Scryfall Oracle Cards bulk data is available;
+* download the public Scryfall Oracle Cards bulk data when the user explicitly requests or approves an update.
+
+* 
 
 **Data Privacy regarding Scryfall:**
 When the application connects to Scryfall, normal Internet metadata (such as your IP address and standard HTTP headers) is naturally visible to Scryfall and its hosting infrastructure. However, the application protects your privacy by ensuring that:
