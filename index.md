@@ -1,92 +1,145 @@
 # BergaHallen KTM 
 
-Welcome to the official documentation and legal policies for **BergaHallen KTM**.
+Welcome to the official documentation **BergaHallen KTM**.
 
 [Android App](https://play.google.com) | [BergaHallenKTM Server](https://github.com/bergahallenktm/bergahallenktm-server) | [BergaHallenKTM Server Manager](https://github.com/bergahallenktm/bergahallenktm-server-installer) | [BergaHallenKTM](https://github.com/bergahallenktm/bergahallenktm)
 
+An offline-first Magic: The Gathering match companion with an optional self-hosted server.**
+
+BergaHallen KTM is built for players who want a simple way to run and track Magic: The Gathering games while keeping their data under their own control.
+
+The Android app is designed to work locally. A BergaHallen KTM Server is optional and can be added when you want shared players, decks, match history, statistics and synchronization between devices on your local network.
+
+> **Development Preview**  
+> BergaHallen KTM is under active development. Public preview releases may change between versions.
+
+**[Get Started](#get-started)** · **[Install Server](#install-server)** · **[Downloads](#downloads)** · **[Documentation](https://github.com/bergahallenktm/bergahallenktm)** · **[GitHub](https://github.com/bergahallenktm)**
+
 ---
-# What is BergaHallen KTM?
 
-BergaHallen KTM is a self-hosted/local-first companion system for playing and managing **Magic: The Gathering** games.
+## What can BergaHallen KTM do?
 
-The project started as a family/kitchen-table match tracker and has grown into a suite containing:
+- Track life totals during Magic games.
+- Track Commander damage, poison and Commander tax.
+- Manage players and decks.
+- Support multiple match formats and multiplayer layouts.
+- Keep core match functionality available without a server.
+- Connect to a self-hosted server for shared data, history and statistics.
+- Keep the server on your own local network.
 
-- a local Server/Webapp;
-- a Linux Installer/Manager;
-- a native Android application;
-- an on-device MTG card scanner called QuickScan.
+---
 
-## Product philosophy
+<a id="get-started"></a>
 
-The system is designed so that a household or play group can run its own server without handing player/game data to a BergaHallen-operated central cloud service.
+## Get Started
 
-There are two important Android usage models:
+### I only want to play locally
 
-### Local Mode
+You do **not** need a server for the core local/offline experience.
 
-The Android device can operate independently of a server for core local gameplay/data workflows.
+The Android app can run matches locally and is designed around offline-first operation.
 
-Local data is stored on-device.
+> Public Android distribution is still being prepared. Download information will be added here when the public Android release is ready.
 
-### Server Mode
+### I want shared players, decks and match history
 
-The Android app connects to a user-selected, self-hosted BergaHallen KTM Server over HTTPS.
+Install the optional BergaHallen KTM Server.
 
-The server holds shared:
+For most users, the recommended method is **BergaHallen KTM Installer & Manager**. It guides the server installation and provides a web interface for ongoing server administration.
 
-- accounts/players;
-- decks;
-- active matches;
-- match history;
-- statistics;
-- synchronization state.
+**[Install BergaHallen KTM Server →](https://github.com/bergahallenktm/bergahallenktm-server-installer/releases)**
 
-## Main user functionality
+---
 
-The current product supports, among other things:
+<a id="install-server"></a>
 
-- player/account registration and login;
-- decks and decklists;
-- deck ownership/loan use;
-- active and simultaneous matches;
-- life totals;
-- poison counters;
-- commander tax;
-- commander damage;
-- concede/elimination/winner state;
-- undo/event history;
-- turn order and seat order;
-- server-backed timers;
-- history/statistics;
-- Swedish/English UI;
-- offline/local play;
-- QR-based secure Server pairing;
-- admin/server management;
-- self-service account deletion;
-- on-device QuickScan card recognition.
+## Install the Server
 
-## Match model
+### Recommended: Installer & Manager
 
-The match-format engine is broader than a simple Commander tracker.
+Use this route if you are installing BergaHallen KTM for the first time.
 
-Current Server logic includes:
+1. Prepare a supported Ubuntu Server system.
+2. Download the latest Installer & Manager `.deb` package.
+3. Install the package.
+4. Open Manager Web.
+5. Let Manager guide you through the BergaHallen KTM Server installation.
 
-- Commander;
-- Oathbreaker;
-- constructed formats;
-- Kitchen Table/freeform;
-- duel/FFA/teams;
-- Two-Headed Giant;
-- Emperor;
-- Archenemy;
-- Archenemy Commander;
-- Attack Left / Defend Right;
-- Kingdoms/Treachery-style hidden roles;
-- Assassin/secret-target style play;
-- Limited formats including Booster Draft, Sealed, Cube, Conspiracy Draft, Team Draft and Team Sealed;
-- Planechase as a modifier/foundation.
+**[Download Installer Download latest Installer & Manager Manager →](https://github.com/bergahallenktm/bergahallenktm-server-installer/releases)**
 
-Do not hard-code match behavior in a client without checking the Server match/rules contracts. The Server remains the shared source of truth for Server Mode rules/state.
+Official server targets are a physical Linux server or a full virtual machine. Container-within-container environments such as LXC/CT are not part of the supported installation path.
+
+### Manual / advanced installation
+
+If you specifically want the standalone server distribution instead of the Installer & Manager workflow, use the Server repository.
+
+**[Open Server downloads →](https://github.com/bergahallenktm/bergahallenktm-server/releases)**
+
+---
+
+<a id="downloads"></a>
+
+## Downloads
+
+| Component | Recommended for | Download |
+| --- | --- | --- |
+| **Installer & Manager** | New server installations | [Release downloads](https://github.com/bergahallenktm/bergahallenktm-server-installer/releases) |
+| **Server** | Manual / advanced installation | [Release downloads](https://github.com/bergahallenktm/bergahallenktm-server/releases) |
+| **Android App** | Local/offline match companion | Public release coming later |
+
+Preview versions are published as GitHub **Pre-releases**. Always read the release notes before upgrading an existing installation.
+
+---
+
+## Local Mode or Server Mode?
+
+| I want to… | Server required? |
+| --- | --- |
+| Run a match on one Android device | No  |
+| Use core match tracking offline | No  |
+| Keep shared players and decks on a server | Yes |
+| Synchronize supported data between devices | Yes |
+| Keep centralized match history and statistics | Yes |
+| Manage the self-hosted installation in a browser | Yes, through Manager Web |
+
+---
+
+## Server philosophy
+
+BergaHallen KTM Server is designed to be **self-hosted and local-first**. It is intended to run on infrastructure you control rather than requiring a public cloud service.
+
+The supported installation flow is designed for users who may have limited Linux command-line experience. Installer & Manager handles the normal installation and management path, while the standalone server package remains available for advanced/manual use.
+
+---
+
+## Documentation
+
+- **[Project overview and documentation](https://github.com/bergahallenktm/bergahallenktm)**
+- **[Installer & Manager](https://github.com/bergahallenktm/bergahallenktm-server-installer)**
+- **[Server](https://github.com/bergahallenktm/bergahallenktm-server)**
+- **[GitHub organization](https://github.com/bergahallenktm)**
+
+Privacy, account deletion and licensing information are maintained in the main project repository.
+
+---
+
+## Need help?
+
+Start by checking the README and release notes for the component you installed. When reporting a problem, include:
+
+- the BergaHallen KTM version,
+- your operating system,
+- whether you used Installer & Manager or a manual server package,
+- the exact error message,
+- relevant diagnostic output with passwords, tokens and other secrets removed.
+
+---
+
+## Project status
+
+BergaHallen KTM is a personal/community project under active development. Some components are intentionally not published yet while development and release preparation continue.
+
+BergaHallen KTM is an independent fan-made project and is not affiliated with or endorsed by Wizards of the Coast.
 
 [Privacy Policy](https://bergahallenktm.github.io/PRIVACY_POLICY.html) | [License](https://bergahallenktm.github.io/license.html) | [Account Deletion](https://bergahallenktm.github.io/ACCOUNT_DELETION.html) | [BergaHallenKTM](https://github.com/bergahallenktm/bergahallenktm)
 
